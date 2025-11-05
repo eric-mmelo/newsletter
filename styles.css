@@ -4,7 +4,9 @@
     --texto: #111;
     --borda: #e5e7eb;
     --caixa: #f8fafc;
-    --acao: #2563eb;
+    --acao: #2563eb; 
+    --btn-bg: #1f2937;
+    --btn-color: #f8fafc;
 }
 
 [data-tema="escuro"] {
@@ -13,6 +15,8 @@
     --borda: #1f2937;
     --caixa: #111827;
     --acao: #38bdf8;
+    --btn-bg: #f8fafc;
+    --btn-color: #1f2937;
 }
 
 /* Estilos padrao */
@@ -88,12 +92,24 @@ input {
     border-radius: .5rem;
     cursor: pointer;
     max-width: 200px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
 }
 
 .btn.primario {
     margin-top: 1rem;
     background-color: var(--acao);
     color: #fff;
+    transition: 0.2s;
+}
+
+.btn.primario:hover {
+    background-color: var(--bg);
+    color: var(--acao);
 }
 
 .rodape {
